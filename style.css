@@ -37,14 +37,15 @@ body > main {
 }
 
 body > main > .left {
-  height: 150px;
-  width: 250px;
+  height: 200px;
+  width: 300px;
   background-color: var(--dark-blue);
+  border-radius: 10px;
   border-top-right-radius: 80px;
 }
 
 body > main > .left > img {
-  margin: 1rem;
+  margin: 2.5rem;
 }
 
 body > main > .left > .flex {
@@ -57,18 +58,22 @@ body > main > .left > .flex {
 
 body > main > .left > .flex > .flex__square {
   text-align: center;
-  height: 40px;
-  width: 40px;
+  height: 44px;
+  width: 44px;
+  border-radius: 10px;
   background-color: var(--very-dark-blue);
+  margin-left: 10px;
+  margin-top: -10px;
 }
 
 body > main > .left > .flex > .flex__square > img {
-  height: 20px;
-  width: 20px;
+  height: 26px;
+  width: 30px;
+  margin-top: 8px;
 }
 
 body > main > .right {
-  height: 150px;
+  height: 160px;
   width: 450px;
   border-radius: 10px;
   background-color: var(--dark-blue);
@@ -79,6 +84,7 @@ body > main > .right {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 40px;
 }
 
 body > main > .right .bubble {
@@ -116,14 +122,20 @@ body > main > .right .bubble-bottom-right:before {
 
 body > main > .right > p {
   padding-bottom: 1rem;
-  margin: 0 3.5rem;
-  margin-top: -1rem;
+  margin: 0 2.5rem;
+  margin-top: -1.5rem;
+  font-size: 1.2rem;
+  color: var(--pale-blue);
+}
+
+body > main > .right > p > span {
+  font-weight: bold;
 }
 
 body > main > .right > .slider {
   margin: 0 auto;
   height: 18px;
-  width: 350px;
+  width: 380px;
   background-color: var(--very-dark-blue);
   border-radius: 10px;
 }
@@ -134,7 +146,7 @@ body > main > .right > .slider > .slider__inner {
   border-radius: 10px;
   margin: 3px 50px 3px 3px;
   height: 0.9rem;
-  width: 280px;
+  width: 300px;
 }
 
 body > main > .right > .slider > .slider__inner > .slider__inner__dot {
@@ -146,8 +158,9 @@ body > main > .right > .slider > .slider__inner > .slider__inner__dot {
 }
 
 body > main > .right > .flex {
-  max-width: 350px;
+  max-width: 380px;
   margin: auto;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,8 +168,13 @@ body > main > .right > .flex {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 70%;
+}
+
+body > main > .right > .flex > .slider__bottom {
   font-weight: bold;
-  font-size: 0.6rem;
+  font-size: 1rem;
+  width: 200px;
+  color: var(--pale-blue);
 }
 
 body > footer {
@@ -175,5 +193,63 @@ body > footer > .attribution {
 
 body > footer > .attribution a {
   color: #3e52a3;
+}
+
+@media all and (max-width: 400px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  body > main {
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body > main > .right {
+    max-width: 350px;
+  }
+  body > main > .right .bubble {
+    position: relative;
+    left: 25%;
+    bottom: -120px;
+  }
+  body > main > .right .bubble-bottom-right:before {
+    border: none;
+  }
+  body > main > .right > p {
+    margin-top: -3rem;
+  }
+  body > main > .right > .slider {
+    max-width: 300px;
+  }
+  body > main > .right > .slider > .slider__inner {
+    max-width: 75%;
+  }
+  body > main > .right > .flex {
+    gap: 30%;
+    margin-left: 2rem;
+  }
+  body > main > footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
