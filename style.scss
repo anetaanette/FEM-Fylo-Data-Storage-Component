@@ -53,10 +53,82 @@ body {
       }
     }
     > .right {
-      height: 130px;
-      width: 380px;
+      height: 150px;
+      width: 450px;
       border-radius: 10px;
       background-color: var(--dark-blue);
+      display: flex;
+      flex-direction: column;
+      .bubble {
+        position: relative;
+        left: 230px;
+        bottom: 50px;
+        font-size: 2.2rem;
+        font-weight: bold;
+        line-height: 24px;
+        width: 180px;
+        border-radius: 10px;
+        background: #fff;
+        padding: 24px;
+        text-align: center;
+        color: #000;
+        > span {
+          font-size: 1rem;
+          color: var(--grayish-blue);
+        }
+      }
+
+      .bubble-bottom-right:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-right: 24px solid #fff;
+        border-left: 12px solid transparent;
+        border-top: 12px solid #fff;
+        border-bottom: 20px solid transparent;
+        right: 0;
+        bottom: -24px;
+      }
+      > p {
+        padding-bottom: 1rem;
+        margin: 0 3.5rem;
+        margin-top: -1rem;
+      }
+      > .slider {
+        margin: 0 auto;
+        height: 18px;
+        width: 350px;
+        background-color: var(--very-dark-blue);
+        border-radius: 10px;
+        > .slider__inner {
+          background-image: linear-gradient(
+            to right,
+            hsl(6, 100%, 80%),
+            hsl(335, 100%, 65%)
+          );
+          border-radius: 10px;
+          margin: 3px 50px 3px 3px;
+          height: 0.9rem;
+          width: 280px;
+          > .slider__inner__dot {
+            height: 0.9rem;
+            width: 0.9rem;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 96%;
+          }
+        }
+      }
+      > .flex {
+        max-width: 350px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 70%;
+        font-weight: bold;
+        font-size: 0.6rem;
+      }
     }
   }
   > footer {

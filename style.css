@@ -68,10 +68,95 @@ body > main > .left > .flex > .flex__square > img {
 }
 
 body > main > .right {
-  height: 130px;
-  width: 380px;
+  height: 150px;
+  width: 450px;
   border-radius: 10px;
   background-color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body > main > .right .bubble {
+  position: relative;
+  left: 230px;
+  bottom: 50px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 24px;
+  width: 180px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+}
+
+body > main > .right .bubble > span {
+  font-size: 1rem;
+  color: var(--grayish-blue);
+}
+
+body > main > .right .bubble-bottom-right:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 24px solid #fff;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 0;
+  bottom: -24px;
+}
+
+body > main > .right > p {
+  padding-bottom: 1rem;
+  margin: 0 3.5rem;
+  margin-top: -1rem;
+}
+
+body > main > .right > .slider {
+  margin: 0 auto;
+  height: 18px;
+  width: 350px;
+  background-color: var(--very-dark-blue);
+  border-radius: 10px;
+}
+
+body > main > .right > .slider > .slider__inner {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 10px;
+  margin: 3px 50px 3px 3px;
+  height: 0.9rem;
+  width: 280px;
+}
+
+body > main > .right > .slider > .slider__inner > .slider__inner__dot {
+  height: 0.9rem;
+  width: 0.9rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 96%;
+}
+
+body > main > .right > .flex {
+  max-width: 350px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 70%;
+  font-weight: bold;
+  font-size: 0.6rem;
 }
 
 body > footer {
