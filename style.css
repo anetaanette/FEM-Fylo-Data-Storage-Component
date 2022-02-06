@@ -20,6 +20,7 @@ body {
   background: url(images/bg-desktop.png) no-repeat;
   background-color: var(--very-dark-blue);
   background-position: 0 130%;
+  overflow: hidden;
 }
 
 body > main {

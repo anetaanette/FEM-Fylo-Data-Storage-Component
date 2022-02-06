@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
-// - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-
 :root {
   --pale-blue: hsl(243, 100%, 93%);
   --grayish-blue: hsl(229, 7%, 55%);
@@ -22,6 +20,7 @@ body {
   background: url(images/bg-desktop.png) no-repeat;
   background-color: var(--very-dark-blue);
   background-position: 0 130%;
+  overflow: hidden;
   > main {
     height: 100vh;
     display: flex;
