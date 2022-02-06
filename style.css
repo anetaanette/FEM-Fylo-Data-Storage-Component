@@ -195,14 +195,18 @@ body > footer > .attribution a {
   color: #3e52a3;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 420px) {
   body {
-    background-image: url(images/bg-mobile.png);
+    background-image: url(images/bg-mobile.png), url(images/bg-mobile.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 60vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
   }
   body > main {
-    max-width: 375px;
+    width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,9 +221,17 @@ body > footer > .attribution a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    float: none;
+  }
+  body > main > .left {
+    margin: 0 auto;
   }
   body > main > .right {
     max-width: 350px;
+    margin: 0 auto;
   }
   body > main > .right .bubble {
     position: relative;
@@ -239,17 +251,14 @@ body > footer > .attribution a {
     max-width: 75%;
   }
   body > main > .right > .flex {
-    gap: 30%;
+    max-width: 400px;
+    gap: 60%;
     margin-left: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  body > main > footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    background: transparent;
+  body > main > .right > .flex > .slider__bottom__right {
+    max-width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
