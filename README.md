@@ -2,13 +2,13 @@
 
 ### Screenshot
 
-![Desktop](https://github.com/anetaanette/frontend-mentor-single-price-grid-component/blob/main/images/screenshot-desktop.png)
-![Mobile](https://github.com/anetaanette/frontend-mentor-single-price-grid-component/blob/main/images/screenshot-mobile.png)
+![Desktop](https://github.com/anetaanette/FEM-Fylo-Data-Storage-Component/blob/main/images/screenshot-desktop.png)
+![Mobile](https://github.com/anetaanette/FEM-Fylo-Data-Storage-Component/blob/main/images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/anetaanette/frontend-mentor-single-price-grid-component)
-- Live Site URL: [Website](https://anetaanette.github.io/frontend-mentor-single-price-grid-component/)
+- Solution URL: [Solution](https://github.com/anetaanette/FEM-Fylo-Data-Storage-Component)
+- Live Site URL: [Website](https://anetaanette.github.io/FEM-Fylo-Data-Storage-Component/)
 
 ### Built with
 
@@ -17,13 +17,13 @@
 - Flexbox
 - Mobile-first workflow
 
-### What I learned
+### What I learnt
 
-I learned how to use grid in media queries and I improved my grid skills.
+I kept improving my media queries and mobile layout. I also learnet how to add a chat bubble on the desktop version.
 
 ### Continued development
 
-Next I want to work on more complicated grid layouts.
+Next I want to work on more complicated mobile layouts.
 
 ## Author
 
