@@ -167,8 +167,7 @@ body {
   body {
     background-image: url(images/bg-mobile.png), url(images/bg-mobile.png);
     background-repeat: no-repeat;
-    background-size: 60vh;
-    //background-position-y: 80%;
+    background-size: 57vh;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -208,11 +207,11 @@ body {
         }
         > .flex {
           max-width: 400px;
-          gap: 60%;
+          gap: 40px;
           margin-left: 2rem;
           box-sizing: border-box;
           > .slider__bottom__right {
-            max-width: 100px;
+            max-width: 80px;
           }
         }
       }

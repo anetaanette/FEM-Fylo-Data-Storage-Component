@@ -199,7 +199,7 @@ body > footer > .attribution a {
   body {
     background-image: url(images/bg-mobile.png), url(images/bg-mobile.png);
     background-repeat: no-repeat;
-    background-size: 60vh;
+    background-size: 57vh;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -252,13 +252,13 @@ body > footer > .attribution a {
   }
   body > main > .right > .flex {
     max-width: 400px;
-    gap: 60%;
+    gap: 40px;
     margin-left: 2rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   body > main > .right > .flex > .slider__bottom__right {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
